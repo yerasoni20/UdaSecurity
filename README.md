@@ -17,8 +17,6 @@ The project has already been moved into a maven file structure for you, but you�
 
 You'll know you've added all of the correct dependencies when the project runs without errors.
 
-![starter pom.xml file](pom_xml.png)
-
 ## Section 2: Split the Image Service into its Own Project
 
 Now that you have identified all the dependencies and can run the project, it’s time to split things up! Remember another team wants to use the Image Service in their project. To accomplish this, you must separate the Image Service from the program and package it as a separate module to be included both in your own project and in other projects
@@ -47,8 +45,6 @@ You should also write interfaces to describe the necessary behaviors of your dep
 ### *Optional Stand Out Task:* Connect Your Project to the AWS Image Recognition Library
 
 > Once you have created an interface for your image service, complete the steps described in the AwsImageService to create credentials and provide them in a properties file for your application. Change the ImageService implementation class in the CatpointGui class to use the AwsImageService instead of the FakeImageService. Try submitting different types of images and see what comes back!
-
-![Image of the Gui](gui_1.png)
 
 **While you are writing tests, it's possible you may need to refactor the application in order to make all of the requirements testable.** For example, parts of the business logic may be contained in the GUI or repository classes. You may have to move this logic into the security service to be tested.
 
@@ -95,16 +91,15 @@ Your task is to make sure all of the Application Requirements are properly imple
  10. If the system is armed, reset all sensors to inactive.
  11. If the system is armed-home _while_ the camera shows a cat, set the alarm status to alarm.
 
-![Image of the Gui](gui_2.png)
+
 
 ## Section 5: Check Unit Test Coverage
 Use IntelliJ to check code coverage. Our goal is to cover everything in the Security Service. Other teams will be maintaining our Image Service so we’ll focus strictly on the behavior of the Security Service. 
 
-![code coverage](code_coverage_1.png)
+
 
 **Your goal is to provide full coverage of all methods that implement the application requirements.** You don’t need to test trivial methods like getters or setters, but you do need to make sure that all the lines in your other methods are reachable by the unit tests.
 
-![code coverage](code_coverage_2.png)
 
 ### *Optional Stand Out Task:* Integration Tests
 
@@ -117,7 +112,6 @@ Update your `pom.xml` to use a maven plugin that allows you to compile your appl
 
 Submit a screenshot titled `executable_jar.png` that shows you running the executable jar from the command line and the application launching. Use the command `java -jar [yourjarname]` to run it.
 
-![creating a jar file](jar.png)
 
 ## Section 7: Add Static Analysis to Build
 Add a Reporting tag to your pom that contains the `spotbugs-maven-plugin` and use it to generate a `spotbugs.html` report in your project’s `/target/site` directory. 
