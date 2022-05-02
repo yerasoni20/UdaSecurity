@@ -7,6 +7,7 @@ The image analysis service used by this application has proven popular as well, 
 It demonstrates the following steps to perform the application well.
 
 1: Update `pom.xml` with Missing Dependencies
+
 2: Split the Image Service into its Own Project
 3: Write Unit Tests and Refactor Project to Support Unit Tests
    Application Requirements to Test:
