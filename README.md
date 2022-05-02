@@ -6,10 +6,9 @@ The image analysis service used by this application has proven popular as well, 
 
 It demonstrates the following steps to perform the application well.
 
-1: Update `pom.xml` with Missing Dependencies
-
-2: Split the Image Service into its Own Project
-3: Write Unit Tests and Refactor Project to Support Unit Tests
+1) Update `pom.xml` with Missing Dependencies
+2) Split the Image Service into its Own Project
+3) Write Unit Tests and Refactor Project to Support Unit Tests
    Application Requirements to Test:
 
     1. If alarm is armed *and* a sensor becomes activated, put the system into pending alarm status.
@@ -24,7 +23,7 @@ It demonstrates the following steps to perform the application well.
     11. If the system is armed, reset all sensors to inactive.
     12. If the system is armed-home *while* the camera shows a cat, set the alarm status to alarm.
 
-4: Fix Any Bugs You Find With Your Unit Tests!
-5: Check Unit Test Coverage
-6: Build the Application into an Executable JAR
-7: Add Static Analysis to Build
+4) Fix Any Bugs You Find With Your Unit Tests!
+5) Check Unit Test Coverage
+6) Build the Application into an Executable JAR
+7) Add Static Analysis to Build
